@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Konfigure-org/konfigure#readme",
   "dependencies": {
+    "antd": "^4.3.4",
     "express": "^4.17.1",
     "next": "^9.4.4",
     "react": "^16.13.1",
@@ -33,7 +34,9 @@
     "@types/react": "^16.9.38",
     "@types/react-dom": "^16.9.8",
     "@types/styled-components": "^5.1.0",
+    "@zeit/next-less": "^1.0.1",
     "install-types": "^2.0.1",
+    "less": "^3.11.3",
     "nodemon": "^2.0.4",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.5"
