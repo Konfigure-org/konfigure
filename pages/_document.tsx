@@ -7,6 +7,8 @@ import Document, {
 } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
+import META from "../configs/meta";
+
 export default class MyDocument extends Document {
   static async getInitialProps(ctx: DocumentContext) {
     const sheet = new ServerStyleSheet();
@@ -46,6 +48,7 @@ export default class MyDocument extends Document {
             name="viewport"
             content="width=device-width, initial-scale=1 user-scalable=no"
           />
+          <meta name="description" content={META.description} />
           <link rel="icon" type="image/png" href="/logo-16.png" />
           <meta name="author" content="Dhruv Jain" />
           <meta content="index, follow" name="robots" />
