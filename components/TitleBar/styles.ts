@@ -9,6 +9,9 @@ export const TitleBarWrapper = styled.div`
     font-size: inherit;
     color: inherit;
   }
+  @media (max-width: 768px) {
+    line-height: 60px;
+  }
 `;
 
 export const Logo = styled.img`
