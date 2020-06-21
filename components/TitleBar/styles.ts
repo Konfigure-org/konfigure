@@ -1,14 +1,18 @@
 import styled, { css } from "styled-components";
 
 export const TitleBarWrapper = styled.div`
-  height: 50px;
-  font-size: 24px;
-  padding: 8px;
-  border-bottom: 1px solid #dedede;
+  height: 80px;
+  font-size: 32px !important;
+  line-height: 80px;
+  h1 {
+    display: inline-block;
+    font-size: inherit;
+    color: inherit;
+  }
 `;
 
 export const Logo = styled.img`
-  height: 24px;
+  height: 32px;
   vertical-align: text-top;
   margin-right: 4px;
 `;
