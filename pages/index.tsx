@@ -1,10 +1,12 @@
 import React from "react";
 import { Button } from "antd";
 
+import { Container } from "../components/common";
+
 const Home: React.FC = () => {
   return (
     <div>
-      Home Page <Button type="primary">A Button</Button>
+      <Container>Home Page</Container>
     </div>
   );
 };
