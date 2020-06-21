@@ -1,6 +1,8 @@
 import express from "express";
 import next from "next";
 
+import apiHandler from "../api";
+
 const PORT: number = parseInt(process.env.PORT, 10) || 3000;
 
 const dev: boolean = process.env.NODE_ENV !== "production";
@@ -11,6 +13,8 @@ const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
   const server = express();
+
+  server.use("/api", apiHandler);
 
   server.all("*", (req, res) => handle(req, res));
 
